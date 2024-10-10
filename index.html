@@ -4,35 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>introduction to Html</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .main__container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(48, 47, 45);
+      }
+
+      .header__container {
+        height: 12vh;
+        width: 100%;
+        background-color: orange;
+      }
+      .header__inner__container {
+        padding: 0px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+      }
+      .header__logo {
+        width: 50px;
+        height: 40px;
+      }
+      .logo {
+        width: 50px;
+        height: 40px;
+      }
+      .header__button {
+        padding: 4px 4px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <div>
+    <div class="main__container">
       <!-- Header -->
-      <div>
-        <!-- Logo -->
-        <!-- This initially is text logo. I intend to change it to an image -->
-        <h2>HTML inc.</h2>
-        <!-- navigations -->
-        <div>
-          <button>About us</button>
-          <button>Contact us</button>
-          <button>Home</button>
+      <div class="header__container">
+        <div class="header__inner__container">
+          <!-- Logo -->
+          <!-- This initially is text logo. I intend to change it to an image -->
+          <div class="header__logo">
+            <img src="./assets/dall-e.png" class="logo" />
+          </div>
+          <!-- navigations -->
+          <div>
+            <button class="header__button">About us</button>
+            <button class="header__button">Contact us</button>
+            <button class="header__button">Home</button>
+          </div>
         </div>
       </div>
       <!-- Content -->
-      <div>
-        <img src="./assets/bg.jpg"/>
+      <!-- <div>
+        <img src="./assets/bg.jpg" />
         <button>CLick me!</button>
-      </div>
+        <ul>
+          <li>Goat</li>
+          <li>Sheep</li>
+          <li>Cow</li>
+        </ul>
+      </div> -->
       <!-- Footer -->
-       <!-- Add this text: Copyright 2024 "Your name" -->
-      <div></div>
+      <!-- Add this text: Copyright 2024 "Your name" -->
+      <div>
+        <h4>Copyright Paul 2024</h4>
+      </div>
     </div>
-    <!-- <h1>Welcome to my first coding class!!</h1>
-        <h2>Hello World</h2>
-        <h3>Hello World</h3>
-        <h4>Hello World</h4>
-        <h5>Hello World</h5>
-        <h6>Hello World</h6> -->
   </body>
 </html>
